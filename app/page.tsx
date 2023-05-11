@@ -4,6 +4,7 @@ import IntroductionSection from "@/components/pages/Home/IntroductionSection";
 import OurTeam from "@/components/pages/Home/OurTeam/OurTeam";
 import HomeContainer from "@/components/pages/Home/HomeContainer";
 import TeamProjects from "@/components/pages/Home/TeamProjects";
+import ContactInfo from "@/components/pages/Home/ContactInfo";
 
 export default function Home() {
   return (
@@ -18,6 +19,8 @@ export default function Home() {
         <OurTeam />
 
         <TeamProjects />
+
+        <ContactInfo />
       </HomeContainer>
     </div>
   );

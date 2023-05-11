@@ -3,23 +3,33 @@ import { Types } from "@/types/types";
 type Props = {
   type?: 'h1' | 'h2';
   children: Types["children"];
+  size: string;
 }
 
-function Title({type, children}: Props) {
+function Title({type, children, size}: Props) {
+
+  const allSizes: Record<Props["type"] | 'default', string> = {
+    'h1': 'text-3xl font-black',
+    'h2': 'text-2xl font-bold',
+    'default': 'text-lg font-medium',
+  }
+
+  const classSize = size || allSizes[type]
+
   switch (type) {
     case 'h1':
       return (
-        <h1 className='text-3xl font-black'>{children}</h1>
+        <h1 className={classSize}>{children}</h1>
       )
       break;
     case 'h2':
       return (
-        <h2 className='text-2xl font-bold'>{children}</h2>
+        <h2 className={classSize}>{children}</h2>
       )
       break;
     default:
       return (
-        <h3 className='text-lg font-medium'>{children}</h3>
+        <h3 className={size || allSizes.default}>{children}</h3>
       )
   }
 }
