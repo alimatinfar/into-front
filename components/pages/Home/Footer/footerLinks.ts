@@ -1,9 +1,10 @@
 import {Ids} from "@/staticData/Ids";
 
-const headerLinks = [
+const footerLinks = [
   {name: 'درباره ما', link: Ids["about-us"]},
-  {name: 'اعضا', link: Ids["members"]},
   {name: 'پروژه‌ها', link: Ids["projects"]},
+  {name: 'تماس با ما', link: Ids["contact-us"]},
+  {name: 'اعضا', link: Ids["members"]},
 ]
 
-export default headerLinks
+export default footerLinks

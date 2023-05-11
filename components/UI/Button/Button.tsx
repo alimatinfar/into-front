@@ -5,14 +5,14 @@ import useButtonSizes from "@/components/UI/Button/hooks/useButtonSizes";
 type ButtonTypes = 'primary' | 'whiteOutline'
 type ButtonSizes = 'md' | 'lg' | 'full'
 
-type Props = {
+export type ButtonProps = {
   type?: ButtonTypes,
   size?: ButtonSizes,
   onClick?: (event: any) => void,
   children: ReactNode
 }
 
-function Button({type='primary', size='md', onClick, children}: Props) {
+function Button({type='primary', size='md', onClick, children}: ButtonProps) {
   const types = useButtonTypes()
   const sizes = useButtonSizes()
 

@@ -1,8 +1,9 @@
 import Title from "@/components/pages/Title";
+import {Ids} from "@/staticData/Ids";
 
 function ContactInfo() {
   return (
-    <div className='pt-40 pb-20 px-10'>
+    <div id={Ids["contact-us"]} className='pt-40 pb-20 px-10'>
 
       <div className='bg-primary py-14 flex flex-col items-center justify-center text-black rounded-3xl'>
         <Title type='h2' size='text-3xl font-bold'>

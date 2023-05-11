@@ -1,9 +1,10 @@
 import Title from "@/components/pages/Title";
 import DarkContainer from "@/components/UI/DarkContainer";
+import {Ids} from "@/staticData/Ids";
 
 function TeamProjects() {
   return (
-    <div className="pt-24 pb-14 flex flex-col justify-center items-center space-y-12">
+    <div id={Ids.projects} className="pt-24 pb-14 flex flex-col justify-center items-center space-y-12">
       <Title type="h2">
         پروژه‌های تیمی
       </Title>

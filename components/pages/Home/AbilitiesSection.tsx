@@ -3,6 +3,7 @@ import Title from "@/components/pages/Title";
 import Button from "@/components/UI/Button/Button";
 import DarkContainer from "../../UI/DarkContainer";
 import HomeContainer from "@/components/pages/Home/HomeContainer";
+import {Ids} from "@/staticData/Ids";
 
 
 type AbilitiesType = { title: string, description: string }[]
@@ -15,7 +16,7 @@ export default function AbilitiesSection() {
   ]
 
   return (
-    <div className="py-14 flex flex-col justify-center items-center mx-auto text-center">
+    <div id={Ids["about-us"]} className="py-14 flex flex-col justify-center items-center mx-auto text-center">
       <Title type="h2">سال ها تجربه و فعالیت در کنار شما</Title>
 
       <p className="mt-5 w-2/3 font-light text-lg">

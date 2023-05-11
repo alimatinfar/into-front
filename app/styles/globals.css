@@ -18,6 +18,10 @@
   }
 }
 
+html {
+  @apply scroll-smooth !important;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   direction: rtl;

@@ -5,6 +5,7 @@ import OurTeam from "@/components/pages/Home/OurTeam/OurTeam";
 import HomeContainer from "@/components/pages/Home/HomeContainer";
 import TeamProjects from "@/components/pages/Home/TeamProjects";
 import ContactInfo from "@/components/pages/Home/ContactInfo";
+import Footer from "@/components/pages/Home/Footer/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,8 @@ export default function Home() {
 
         <ContactInfo />
       </HomeContainer>
+
+      <Footer />
     </div>
   );
 }

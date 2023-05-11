@@ -2,11 +2,12 @@ import Title from "@/components/pages/Title";
 import ourTeamData from "@/components/pages/Home/OurTeam/ourTeamData";
 import DarkContainer from "@/components/UI/DarkContainer";
 import isOdd from "@/utils/isOdd";
+import {Ids} from "@/staticData/Ids";
 
 
 export default function OurTeam() {
   return (
-    <div className="pt-24 pb-14 flex flex-col justify-center items-center space-y-20">
+    <div id={Ids.members} className="pt-24 pb-14 flex flex-col justify-center items-center space-y-20">
       <Title type="h2">
         تیم ما
       </Title>

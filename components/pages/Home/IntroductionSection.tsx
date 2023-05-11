@@ -1,6 +1,8 @@
 import Header from "@/components/pages/Home/Header/Header";
 import Title from "@/components/pages/Title";
 import Button from "@/components/UI/Button/Button";
+import LinkButton from "@/components/UI/Button/LinkButton";
+import {Ids} from "@/staticData/Ids";
 
 export default function IntroductionSection() {
   return (
@@ -16,10 +18,10 @@ export default function IntroductionSection() {
       </p>
 
       <div className="flex items-center justify-center space-x-reverse space-x-4 mt-10">
-        <Button size="lg">تماس با ما</Button>
-        <Button size="lg" type="whiteOutline">
+        <LinkButton href={`#${Ids["contact-us"]}`} size="lg">تماس با ما</LinkButton>
+        <LinkButton href={`#${Ids["about-us"]}`} size="lg" type="whiteOutline">
           درباره ما
-        </Button>
+        </LinkButton>
       </div>
 
       <img src="/images/code.png" alt="code" />
