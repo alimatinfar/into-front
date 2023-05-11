@@ -3,12 +3,12 @@ import { Types } from "@/types/types";
 type Props = {
   type?: 'h1' | 'h2';
   children: Types["children"];
-  size: string;
+  size?: string;
 }
 
-function Title({type, children, size}: Props) {
+function Title({type = 'h1', children, size}: Props) {
 
-  const allSizes: Record<Props["type"] | 'default', string> = {
+  const allSizes: Record<Exclude<Props["type"], undefined> | 'default', string> = {
     'h1': 'text-3xl font-black',
     'h2': 'text-2xl font-bold',
     'default': 'text-lg font-medium',
