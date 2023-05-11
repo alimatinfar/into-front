@@ -1,8 +1,8 @@
 
 function useButtonTypes() {
   const styles = {
-    'primary': 'bg-primary hover:bg-secondary focus:ring-secondary',
-    'primaryOutline': 'text-primary border border-primary bg-white hover:bg-gray-100 focus:ring-secondary',
+    'primary': 'text-black bg-primary hover:bg-secondary focus:ring-secondary',
+    'whiteOutline': 'border border-white bg-transparent',
   }
 
   return styles;

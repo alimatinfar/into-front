@@ -2,7 +2,7 @@ import React, {ReactNode} from 'react';
 import useButtonTypes from "@/components/UI/Button/hooks/useButtonTypes";
 import useButtonSizes from "@/components/UI/Button/hooks/useButtonSizes";
 
-type ButtonTypes = 'primary' | 'primaryOutline'
+type ButtonTypes = 'primary' | 'whiteOutline'
 type ButtonSizes = 'md' | 'lg' | 'full'
 
 type Props = {
@@ -21,7 +21,7 @@ function Button({type='primary', size='md', onClick, children}: Props) {
   return (
     <button
       {...onClick ? {onClick: onClick} : {} }
-      className={`rounded text-center duration-300 ${customClass}`}>
+      className={`rounded-md text-center duration-300 ${customClass}`}>
       {children}
     </button>
   );
