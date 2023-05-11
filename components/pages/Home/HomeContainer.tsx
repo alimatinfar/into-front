@@ -7,7 +7,7 @@ type Props = {
 
 function HomeContainer({children, className}: Props) {
   return (
-    <div className={`px-40 ${className}`}>
+    <div className={`px-48 ${className}`}>
       {children}
     </div>
   );
