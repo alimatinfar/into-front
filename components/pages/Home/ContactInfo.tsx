@@ -1,9 +1,10 @@
 import Title from "@/components/pages/Title";
 import {Ids} from "@/staticData/Ids";
+import HomeContainer from "@/components/pages/Home/HomeContainer";
 
 function ContactInfo() {
   return (
-    <div id={Ids["contact-us"]} className='pt-40 pb-20 px-10'>
+    <HomeContainer id={Ids["contact-us"]} className='pt-40 pb-20 px-10'>
 
       <div className='bg-primary py-14 flex flex-col items-center justify-center text-black rounded-3xl'>
         <Title type='h2' size='text-3xl font-bold'>
@@ -20,7 +21,7 @@ function ContactInfo() {
         </div>
       </div>
 
-    </div>
+    </HomeContainer>
   )
 }
 

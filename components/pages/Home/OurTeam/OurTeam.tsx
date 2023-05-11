@@ -3,11 +3,12 @@ import ourTeamData from "@/components/pages/Home/OurTeam/ourTeamData";
 import DarkContainer from "@/components/UI/DarkContainer";
 import isOdd from "@/utils/isOdd";
 import {Ids} from "@/staticData/Ids";
+import HomeContainer from "@/components/pages/Home/HomeContainer";
 
 
 export default function OurTeam() {
   return (
-    <div id={Ids.members} className="pt-24 pb-14 flex flex-col justify-center items-center space-y-20">
+    <HomeContainer id={Ids.members} className="pt-24 pb-14 flex flex-col justify-center items-center space-y-20">
       <Title type="h2">
         تیم ما
       </Title>
@@ -42,6 +43,6 @@ export default function OurTeam() {
           )
         })}
       </div>
-    </div>
+    </HomeContainer>
   );
 }

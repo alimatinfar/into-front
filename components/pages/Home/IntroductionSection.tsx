@@ -3,16 +3,17 @@ import Title from "@/components/pages/Title";
 import Button from "@/components/UI/Button/Button";
 import LinkButton from "@/components/UI/Button/LinkButton";
 import {Ids} from "@/staticData/Ids";
+import HomeContainer from "@/components/pages/Home/HomeContainer";
 
 export default function IntroductionSection() {
   return (
-    <div className="py-14 flex flex-col justify-center items-center">
+    <HomeContainer className="py-14 flex flex-col justify-center items-center">
       <Title type="h1">
         طراحی و توسعه سامانه های{" "}
         <span className="text-primary">مبتنی بر وب</span>
       </Title>
 
-      <p className="text-white/70 mt-5 font-light">
+      <p className="text-white/70 mt-5 font-light text-center">
         طراحی وبسایت ها و تبدیل فرایند ها به نرم افزار های قابل اجرا تحت وب با
         استفاده از سال ها تجربه و مهارت
       </p>
@@ -24,7 +25,7 @@ export default function IntroductionSection() {
         </LinkButton>
       </div>
 
-      <img src="/images/code.png" alt="code" />
-    </div>
+      <img src="/images/code.png" alt="code"/>
+    </HomeContainer>
   );
 }

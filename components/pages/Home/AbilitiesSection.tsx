@@ -16,7 +16,7 @@ export default function AbilitiesSection() {
   ]
 
   return (
-    <div id={Ids["about-us"]} className="py-14 flex flex-col justify-center items-center mx-auto text-center">
+    <HomeContainer id={Ids["about-us"]} className="py-14 flex flex-col justify-center items-center mx-auto text-center">
       <Title type="h2">سال ها تجربه و فعالیت در کنار شما</Title>
 
       <p className="mt-5 w-2/3 font-light text-lg">
@@ -38,6 +38,6 @@ export default function AbilitiesSection() {
           </DarkContainer>
         ))}
       </div>
-    </div>
+    </HomeContainer>
   );
 }

@@ -1,10 +1,11 @@
 import Title from "@/components/pages/Title";
 import DarkContainer from "@/components/UI/DarkContainer";
 import {Ids} from "@/staticData/Ids";
+import HomeContainer from "@/components/pages/Home/HomeContainer";
 
 function TeamProjects() {
   return (
-    <div id={Ids.projects} className="pt-24 pb-14 flex flex-col justify-center items-center space-y-12">
+    <HomeContainer id={Ids.projects} className="pt-24 pb-14 flex flex-col justify-center items-center space-y-12">
       <Title type="h2">
         پروژه‌های تیمی
       </Title>
@@ -21,7 +22,7 @@ function TeamProjects() {
         ساخت. این سامانه در راستای دستیابی به این هدف بزرگ، به عنوان دروازه تبادل اطلاعات سامانه های سازمان راهداری و
         حمل ونقل جاده ای برای دریافت درخواست های حمل ونقل جاده‌ای (داخلی) کشور قرار خواهد گرفت
       </p>
-    </div>
+    </HomeContainer>
   )
 }
 
