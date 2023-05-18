@@ -46,6 +46,10 @@ const projectsInfo = {
     title: 'موپن',
     logo: 'mopon.png',
   },
+  jika: {
+    title: 'جیکا',
+    logo: 'mopon.png',
+  },
   nabz: {
     title: 'نبض هوشمند سلامت',
     logo: 'nabz.webp',
@@ -274,7 +278,7 @@ const ourTeamData: OurTeamDataType = [
         description: 'طراحی رابط و تجربه کاربری برند موپن',
       },
       {
-        info: projectsInfo.mopon,
+        info: projectsInfo.jika,
         description: 'طراحی رابط و تجربه کاربری اپلیکیشن جیکا ،در زمینه پیام رسانی،',
       },
       // {
