@@ -7,7 +7,7 @@ import Image from "next/image";
 function TeamProjects() {
   return (
     <HomeContainer id={Ids.projects} className="pt-24 pb-14 flex flex-col justify-center items-center space-y-12">
-      <Title type="h2">
+      <Title type="h2" primaryColor withLine>
         پروژه‌های تیمی
       </Title>
 

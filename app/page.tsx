@@ -18,18 +18,19 @@ export default function Home() {
         <AbilitiesSection/>
 
         <img
-          className='absolute w-full left-0 top-0 -z-10'
+          className='absolute w-full left-0 top-60 xs:top-20 md:top-0 -z-10'
           src="/images/introduction-background.svg"
           alt="introduction-background"
         />
       </div>
-      <OurTeam/>
 
-      <TeamProjects/>
+      {/*<OurTeam/>*/}
 
-      <ContactInfo/>
+      {/*<TeamProjects/>*/}
 
-      <Footer/>
+      {/*<ContactInfo/>*/}
+
+      {/*<Footer/>*/}
     </div>
   );
 }

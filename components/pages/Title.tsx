@@ -11,9 +11,9 @@ type Props = {
 function Title({type = 'h1', children, size, primaryColor, withLine}: Props) {
 
   const allSizes: Record<Exclude<Props["type"], undefined> | 'default', string> = {
-    'h1': 'text-3xl font-black',
-    'h2': 'text-2xl font-bold',
-    'default': 'text-lg font-medium',
+    'h1': 'text-2xl xs:text-3xl font-black',
+    'h2': 'text-xl xs:text-2xl font-bold',
+    'default': 'xs:text-lg font-medium',
   }
 
   const classSize = size || (allSizes[type] ? allSizes[type] : allSizes.default)
