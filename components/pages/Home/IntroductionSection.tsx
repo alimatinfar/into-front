@@ -15,7 +15,7 @@ function TextPrimary({children}: {children: Types["children"]}) {
 
 export default function IntroductionSection() {
   return (
-    <HomeContainer className="py-5 xs:py-10 md:py-14 flex flex-col justify-center items-center text-center">
+    <HomeContainer className="py-5 md:py-8 lg:py-14 flex flex-col justify-center items-center text-center">
       <Title type="h1">
         طراحی و توسعه
         <TextPrimary> وبسایت </TextPrimary>
