@@ -1,16 +1,27 @@
-import Header from "@/components/pages/Home/Header/Header";
 import Title from "@/components/pages/Title";
-import Button from "@/components/UI/Button/Button";
 import LinkButton from "@/components/UI/Button/LinkButton";
 import {Ids} from "@/staticData/Ids";
 import HomeContainer from "@/components/pages/Home/HomeContainer";
+import {Types} from "@/types/types";
+
+
+function TextPrimary({children}: {children: Types["children"]}) {
+  return (
+    <span className="text-primary">
+      {children}
+    </span>
+  )
+}
 
 export default function IntroductionSection() {
   return (
     <HomeContainer className="py-14 flex flex-col justify-center items-center">
       <Title type="h1">
-        طراحی و توسعه سامانه های{" "}
-        <span className="text-primary">مبتنی بر وب</span>
+        طراحی و توسعه
+        <TextPrimary> وبسایت </TextPrimary>
+        و
+        <TextPrimary> سامانه‌</TextPrimary>
+        های مبتنی بر وب
       </Title>
 
       <p className="text-white/70 mt-5 font-light text-center">

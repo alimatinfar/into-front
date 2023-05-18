@@ -8,7 +8,7 @@ type Props = {
 export default function DarkContainer({children, className}: Props) {
 
   return (
-    <div className={`bg-dark-2/30 rounded-3xl p-10 aspect-square ${className}`}>
+    <div className={`bg-dark-4 rounded-3xl p-5 aspect-square ${className}`}>
       {children}
     </div>
   );

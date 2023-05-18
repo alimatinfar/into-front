@@ -12,16 +12,24 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+
       colors: {
         dark: {
           1: '#131321',
           2: '#212035',
+          3: '#474759',
+          4: '#171727',
         },
         'custom-gray': {
           1: '#FBFDFD'
         },
         primary: '#50F9AC'
       },
+
+      boxShadow: {
+        'custom-white': '0px 2px 74px -4px rgba(255, 255, 255, 0.15)'
+      },
+
       fontFamily: {
         'peyda': 'peyda',
       },

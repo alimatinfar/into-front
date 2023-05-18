@@ -10,7 +10,7 @@ function HomeContainer({children, className, id}: Props) {
   return (
     <div
       {...id ? {id} : {}}
-      className={`px-48 ${className}`}
+      className={`px-44 ${className}`}
     >
       {children}
     </div>
