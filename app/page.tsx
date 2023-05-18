@@ -24,13 +24,13 @@ export default function Home() {
         />
       </div>
 
-      {/*<OurTeam/>*/}
+      <OurTeam/>
 
-      {/*<TeamProjects/>*/}
+      <TeamProjects/>
 
-      {/*<ContactInfo/>*/}
+      <ContactInfo/>
 
-      {/*<Footer/>*/}
+      <Footer/>
     </div>
   );
 }

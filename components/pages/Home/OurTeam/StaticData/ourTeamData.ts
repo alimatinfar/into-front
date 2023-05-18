@@ -88,7 +88,7 @@ const projectsInfo = {
   }
 }
 
-type SkillType = {
+export type SkillType = {
   info: ProjectInfoValueType, description: string
 }
 

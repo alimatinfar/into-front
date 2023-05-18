@@ -1,10 +1,9 @@
 import Title from "@/components/pages/Title";
-import ourTeamData from "@/components/pages/Home/OurTeam/ourTeamData";
-import DarkContainer from "@/components/UI/DarkContainer";
+import ourTeamData from "@/components/pages/Home/OurTeam/StaticData/ourTeamData";
 import isOdd from "@/utils/isOdd";
 import {Ids} from "@/staticData/Ids";
 import HomeContainer from "@/components/pages/Home/HomeContainer";
-import Image from "next/image";
+import OurTeamSkills from "@/components/pages/Home/OurTeam/OurTeamSkills";
 
 
 export default function OurTeam() {
@@ -14,49 +13,46 @@ export default function OurTeam() {
         تیم ما
       </Title>
 
-      <div className='space-y-60 w-full'>
+      <div className='space-y-16 md:space-y-32 xl:space-y-48 w-full'>
         {ourTeamData.map((data, index) => {
           const indexIsOdd = isOdd(index)
 
           return (
             <div key={data.fullName}>
-              <div className='w-full px-14 mb-20'>
-                <div className='w-full relative'>
-                  <div className='bg-white w-48 h-60 rounded-3xl'>
+              <div className='w-full lg:px-7 xl:px-14 mb-8 md:mb-20'>
+                <div className='flex flex-col md:block w-full relative'>
+                  <div className='bg-white w-40 md:w-48 h-52 md:h-60 rounded-3xl '>
 
                   </div>
 
-                  <div className='flex items-center justify-between absolute top-20 pr-52 w-full'>
-                    <span className='text-primary text-4xl font-bold'>{data.fullName}</span>
+                  <div className='flex flex-col md:flex-row md:items-center md:justify-between md:absolute md:top-16 lg:top-20 md:pr-52 w-full my-5 md:my-0'>
+                    <span className='text-primary text-xl md:text-2xl xl:text-4xl font-bold'>{data.fullName}</span>
 
-                    <span className='font-extralight text-xl text-white/80'>{data.jobTitle}</span>
+                    <span className='self-end md:self-auto font-extralight text-sm lg:text-base xl:text-xl text-white/80'>{data.jobTitle}</span>
                   </div>
 
-                  <div className='pr-32 w-full absolute -bottom-7'>
+                  <div className='md:pr-32 w-full md:absolute md:-bottom-7'>
                     <div
-                      className='w-full py-5 pl-5 pr-20  shadow-custom-white rounded-3xl text-2xl leading-10 bg-opacity-30'>
+                      className='text-justify font-light md:font-normal w-full py-5 pl-5 pr-5 md:pr-20 shadow-custom-mobile-white md:shadow-custom-white rounded-3xl lg:text-xl xl:text-2xl leading-8 md:leading-10 bg-opacity-30'>
                       {data.description}
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className='grid grid-cols-4 gap-5'>
-                {data.skills.map((skill, index) => (
-                  <DarkContainer key={index} className='flex flex-col space-y-4'>
-                    <div className='relative w-20 h-20'>
-                      <Image
-                        fill
-                        src={`/images/ourTeam/${skill.info.logo}`} alt={skill.info.logo}
-                        style={{objectFit: 'contain'}}
-                      />
-                    </div>
+              <div className='hidden md:grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5'>
+                <OurTeamSkills skills={data.skills} />
+              </div>
 
-                    <span className='text-white/70 font-light text-sm'>{skill.info.title}</span>
+              <div className='md:hidden w-full overflow-x-auto'>
+                <div className='flex items-center justify-between space-x-4 space-x-reverse'>
+                  <OurTeamSkills skills={data.skills} />
+                  {/*{data.skills.map(skill => (*/}
+                  {/*  <div key={skill.info.title} className='h-80 aspect-square bg-red-500'>*/}
 
-                    <span>{skill.description}</span>
-                  </DarkContainer>
-                ))}
+                  {/*  </div>*/}
+                  {/*))}*/}
+                </div>
               </div>
             </div>
 

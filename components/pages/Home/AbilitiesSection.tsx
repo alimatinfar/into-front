@@ -51,7 +51,7 @@ export default function AbilitiesSection() {
           return (
             <DarkContainer
               key={index}
-              className={`flex flex-col justify-end aspect-square relative md:col-span-12 md:col-span-6 xl:col-span-4  ${isLastItem && 'md:col-start-4 xl:col-start-auto'}`}
+              className={`flex flex-col justify-end aspect-square relative md:col-span-6 xl:col-span-4  ${isLastItem && 'md:col-start-4 xl:col-start-auto'}`}
             >
               <Image
                 src={`${imageRootDirectory}${item.backgroundImage}`} alt={item.backgroundImage} fill
