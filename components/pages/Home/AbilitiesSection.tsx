@@ -1,6 +1,4 @@
-import Header from "@/components/pages/Home/Header/Header";
 import Title from "@/components/pages/Title";
-import Button from "@/components/UI/Button/Button";
 import DarkContainer from "../../UI/DarkContainer";
 import HomeContainer from "@/components/pages/Home/HomeContainer";
 import {Ids} from "@/staticData/Ids";
