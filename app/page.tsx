@@ -1,10 +1,10 @@
 import AbilitiesSection from "@/components/pages/Home/AbilitiesSection";
-import Header from "@/components/pages/Home/Header/Header";
+import Header from "@/components/Header/Header";
 import IntroductionSection from "@/components/pages/Home/IntroductionSection";
 import OurTeam from "@/components/pages/Home/OurTeam/OurTeam";
 import TeamProjects from "@/components/pages/Home/TeamProjects";
 import ContactInfo from "@/components/pages/Home/ContactInfo";
-import Footer from "@/components/pages/Home/Footer/Footer";
+import Footer from "@/components/Footer/Footer";
 
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
     <div>
       <Header/>
 
-      <div className='relative overflow-hidden'>
+      <div className='relative overflow-hidden pt-20 md:pt-0'>
         <IntroductionSection/>
 
         <AbilitiesSection/>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import footerLinks from "@/components/pages/Home/Footer/footerLinks";
+import footerLinks from "@/components/Footer/footerLinks";
 import Image from "next/image";
 
 function Footer() {
