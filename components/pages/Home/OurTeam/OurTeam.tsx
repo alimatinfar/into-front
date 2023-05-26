@@ -28,7 +28,7 @@ export default function OurTeam() {
                   <div className='flex flex-col md:flex-row md:items-center md:justify-between md:absolute md:top-16 lg:top-20 md:pr-52 w-full my-5 md:my-0'>
                     <span className='text-primary text-xl md:text-2xl xl:text-4xl font-bold'>{data.fullName}</span>
 
-                    <span className='self-end md:self-auto font-extralight text-sm lg:text-base xl:text-xl text-white/80'>{data.jobTitle}</span>
+                    <span className='self-end md:self-auto font-thin text-sm lg:text-base xl:text-xl text-white/80'>{data.jobTitle}</span>
                   </div>
 
                   <div className='md:pr-32 w-full md:absolute md:-bottom-7'>

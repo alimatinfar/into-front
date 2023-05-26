@@ -66,7 +66,7 @@ export default function AbilitiesSection() {
               </div>
 
               <div className='flex flex-col text-right'>
-                <p className='font-bold text-lg'>{item.title}</p>
+                <p className='font-semibold text-lg'>{item.title}</p>
 
                 <p className='mt-3 font-light text-base'>{item.description}</p>
               </div>

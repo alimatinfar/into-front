@@ -15,7 +15,7 @@ function Header() {
         <Image src='/images/logo.svg' alt='logo.svg' width={100} height={100}/>
       </Link>
 
-      <div className='space-x-5 space-x-reverse hidden md:block'>
+      <div className='space-x-8 space-x-reverse hidden md:block'>
         {headerLinks.map(link => (
           <Link key={link.link} href={`#${link.link}`} className='text-white font-light'>{link.name}</Link>
         ))}

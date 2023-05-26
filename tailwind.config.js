@@ -33,7 +33,7 @@ module.exports = {
       },
 
       boxShadow: {
-        'custom-white': '0px 2px 74px -4px rgba(255, 255, 255, 0.15)',
+        'custom-white': '0px 2px 74px -4px rgba(255, 255, 255, 0.1)',
         'custom-mobile-white': '0px 2px 25px -2px rgba(255, 255, 255, 0.10)',
       },
 

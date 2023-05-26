@@ -24,7 +24,7 @@ export default function IntroductionSection() {
         های مبتنی بر وب
       </Title>
 
-      <p className="text-white/70 mt-5 font-light text-center">
+      <p className="text-white/80 mt-5 font-light text-center">
         طراحی وبسایت ها و تبدیل فرایند ها به نرم افزار های قابل اجرا تحت وب با
         استفاده از سال ها تجربه و مهارت
       </p>
