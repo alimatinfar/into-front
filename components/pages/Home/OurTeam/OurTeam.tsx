@@ -1,9 +1,9 @@
 import Title from "@/components/pages/Title";
 import ourTeamData from "@/components/pages/Home/OurTeam/StaticData/ourTeamData";
-import isOdd from "@/utils/isOdd";
 import {Ids} from "@/staticData/Ids";
 import HomeContainer from "@/components/pages/Home/HomeContainer";
 import OurTeamSkills from "@/components/pages/Home/OurTeam/OurTeamSkills";
+import Image from "next/image";
 
 
 export default function OurTeam() {
@@ -15,14 +15,15 @@ export default function OurTeam() {
 
       <div className='space-y-16 md:space-y-32 xl:space-y-48 w-full'>
         {ourTeamData.map((data, index) => {
-          const indexIsOdd = isOdd(index)
-
           return (
             <div key={data.fullName}>
               <div className='w-full lg:px-7 xl:px-14 mb-8 md:mb-20'>
                 <div className='flex flex-col md:block w-full relative'>
-                  <div className='bg-white w-40 md:w-48 h-52 md:h-60 rounded-3xl '>
-
+                  <div className='w-40 md:w-48 h-52 md:h-60 rounded-3xl relative z-10'>
+                    <img
+                      src={`/images/ourTeam/profile/${data.image}`}
+                      alt={data.image}
+                    />
                   </div>
 
                   <div className='flex flex-col md:flex-row md:items-center md:justify-between md:absolute md:top-16 lg:top-20 md:pr-52 w-full my-5 md:my-0'>
@@ -47,37 +48,9 @@ export default function OurTeam() {
               <div className='md:hidden w-full overflow-x-auto'>
                 <div className='flex items-center justify-between space-x-4 space-x-reverse'>
                   <OurTeamSkills skills={data.skills} />
-                  {/*{data.skills.map(skill => (*/}
-                  {/*  <div key={skill.info.title} className='h-80 aspect-square bg-red-500'>*/}
-
-                  {/*  </div>*/}
-                  {/*))}*/}
                 </div>
               </div>
             </div>
-
-            // <div key={data.fullName} className={`flex w-full items-center space-x-20 ${indexIsOdd ? 'flex-row-reverse' : 'space-x-reverse'}`}>
-            //   <div className='w-96 text-center'>
-            //     <DarkContainer className='flex flex-col justify-end aspect-square w-full mb-5'>
-            //       {/*<img src="/images/basketball.svg" alt="basketball" className='w-40 mx-auto' />*/}
-            //
-            //       <p className='mt-5 font-semibold'>{data.fullName}</p>
-            //
-            //       <p className='mt-3 text-primary'>{data.jobTitle}</p>
-            //     </DarkContainer>
-            //
-            //     <p className='font-light'>{data.description}</p>
-            //   </div>
-            //
-            //   <div className='flex-1 space-y-2'>
-            //     {data.skills.map((skill, index) => (
-            //       <div key={index} className='flex'>
-            //         <span className='bg-white h-1.5 w-1.5 mt-2.5 ml-2'/>
-            //         <p className='text-xl font-light flex-1'>{skill}</p>
-            //       </div>
-            //     ))}
-            //   </div>
-            // </div>
           )
         })}
       </div>

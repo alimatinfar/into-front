@@ -37,9 +37,9 @@ export default function AbilitiesSection() {
       <Title type="h2">سال ها تجربه و فعالیت در کنار شما</Title>
 
       <p className="mt-5 w-full xs:w-4/5 lg::w-2/3 font-light text-sm xs:text-base md:text-lg">
-        تیم ما با تکیه بر توانایی ها تجربه های خود در پیاده سازی انواع سامانه ها
-        در مقیاس کشور ، به کسب و کار شما کمک می کند تا در مسیر رشد و توانمند
-        سازی تمام فعالیت های خود را به فضا وب انتقال دهید
+        تیم ما با تکیه بر توانایی ها و تجربه های خود در پیاده سازی انواع سامانه ها
+        در مقیاس کشوری ، به کسب و کار شما کمک می کند تا در جهت رشد و توانمند
+        سازی، تمام فعالیت های خود را به فضای وب انتقال دهید
       </p>
 
       <div className='mt-10 flex flex-col space-y-8 md:space-y-0 md:grid grid-cols-12 md:gap-8 w-full sm:px-14 md:px-0'>

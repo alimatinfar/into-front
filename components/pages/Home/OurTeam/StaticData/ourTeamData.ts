@@ -97,6 +97,7 @@ type OurTeamDataType = {
   jobTitle: string;
   description: string;
   skills: SkillType[];
+  image: string;
 }[]
 
 const ourTeamData: OurTeamDataType = [
@@ -104,54 +105,55 @@ const ourTeamData: OurTeamDataType = [
     fullName: 'میثم حیدری',
     jobTitle: 'Backend Developer',
     description: 'کارشناس ارشد نرم افزار و دکترای مدیریت کسب  و کار از دانشگاه علامه طباطبایی با بیش از 20 سال سابقه فعالیت در حوزه مدیریت و فناوری اطلاعات',
+    image: 'heydari.png',
     skills: [
       {
         info: projectsInfo.dargah,
-        description: 'مدیر فنی تیم در پیاده سازی سامانه درگاه ملی حمل بار',
+        description: 'مدیر فنی سامانه درگاه ملی حمل بار',
       },
       {
         info: projectsInfo.vezaratRah,
-        description: 'مدیر فناوری اطلاعات در طرح تفصیلی معماری لجستیک و حمل و نقل',
+        description: 'مدیر فناوری اطلاعات در طرح تفصیلی معماری، لجستیک و حمل و نقل',
       },
       {
         info: projectsInfo.banader,
-        description: 'مدیر پروژه و نرم افزار در سامانه مدیریت ، نظارت و کنترل عملیات بندری کانتینری',
+        description: 'مدیر پروژه سامانه مدیریت، نظارت و کنترل عملیات بندری کانتینری',
       },
       {
         info: projectsInfo.banader,
-        description: 'مشاور سازمان بنادر در ایجاد کانکتور سیستم های بنادر با گمرک و بستر یکپارچه تبادلات اقتصادی',
+        description: 'مشاور سازمان بنادر در ایجاد کانکتور سیستم های سازمان با گمرک و ایجاد بستر یکپارچه تبادلات اقتصادی',
       },
       {
         info: projectsInfo.dargah,
-        description: 'مشاور فناوری اطلاعات در استقرار سامانه TOS',
+        description: 'مشاور فناوری اطلاعات سازمان راهداری در استقرار سامانه TOS',
       },
       {
         info: projectsInfo.sazmanAsnad,
-        description: 'مدیر پروژه در سامانه یکپارچه مدیریت اجرای اسناد رسمی',
+        description: 'مدیر پروژه سامانه یکپارچه مدیریت اجرای اسناد رسمی',
       },
       {
         info: projectsInfo.sazmanAsnad,
-        description: 'مدیره پروژه سیستم مکانیزه فرایند های انبار',
+        description: 'مدیره پروژه سیستم مکانیزه فرایندهای انبار',
       },
       {
         info: projectsInfo.modiriatBohran,
-        description: 'مدیر پروژه سیستم مدیریت انبارهای بحران کشور',
+        description: 'مدیر پروژه سامانه مدیریت انبارهای بحران کشور',
       },
       {
         info: projectsInfo.otaghBazargani,
-        description: 'طراحی و پیاده سازی سیستم بانک اطلاعات کالا اداره بازرگانی استان تهران',
+        description: 'طراحی و پیاده سازی سامانه بانک اطلاعات کالای اداره بازرگانی استان تهران',
       },
       {
         info: projectsInfo.banader,
-        description: 'تحلیل و مدیریت پروژه در سیستم جامع امور بندری',
+        description: 'تحلیل و مدیریت پروژه سامانه جامع امور بندری',
       },
       {
         info: projectsInfo.entezami,
-        description: 'تحلیل و طراحی پروژه کدینگ نظام آماری جرایئم مرکز فرماندهی و کنترل ناجا',
+        description: 'تحلیل و طراحی پروژه کدینگ نظام آماری جرائم مرکز فرماندهی و کنترل ناجا',
       },
       {
         info: projectsInfo.entezami,
-        description: 'ناظر و مشاور پروژه نرم افزار 110 کشور و طرح مهار جرائم',
+        description: 'ناظر و مشاور پروژه 110 کشور و طرح مهار جرائم',
       },
     ]
   },
@@ -159,6 +161,7 @@ const ourTeamData: OurTeamDataType = [
     fullName: 'محمدرضا خداخواه',
     jobTitle: 'Product Owner',
     description: 'کارشناس مهندسی  نرم افزار با بیش از 10 سال سابقه فعالیت در حوزه مدیریت و فناوری اطلاعات',
+    image: 'khodakhah.png',
     skills: [
       {
         info: projectsInfo.dargah,
@@ -166,88 +169,91 @@ const ourTeamData: OurTeamDataType = [
       },
       {
         info: projectsInfo.saderat,
-        description: 'مدیر ارشد پروژه های نرم افزاری بانک صادرات',
+        description: 'مدیر ارشد پروژه های نرم افزاری مالی - سپهری بانک صادرات',
       },
       {
         info: projectsInfo.saderat,
-        description: 'مدیر پروژه سامانه های پولشویی بانک صادرات',
+        description: 'تحلیل و مدیریت پروژه سامانه‌های مبارزه با پولشویی بانک صادرات',
       },
       {
-        info: projectsInfo.kharazmi,
-        description: 'برنامه نویس Full-stack developer  در داده پردازی خوارزمی ',
+        info: projectsInfo.saderat,
+        description: 'برنامه نویس Full-stack سامانه مدیریت امنیت و کنترل دسترسی بانک صادرات',
       },
     ]
   },
   {
     fullName: 'سید حبیب اله موسوی سجاد',
     jobTitle: 'Backend Developer',
-    description: 'کارشناس ارشد مهندسی نرم افزار و بیش از 11 سال سابقه فعالیت در حوزه برنامه نویسی ',
+    description: 'کارشناس ارشد مهندسی نرم افزار با بیش از 11 سال سابقه فعالیت در حوزه برنامه نویسی ',
+    image: 'habib.png',
     skills: [
       {
         info: projectsInfo.dargah,
-        description: 'کارشناس برنامه نویسی در پروژه درگاه ملی حمل بار',
+        description: 'برنامه نویس سامانه درگاه ملی حمل بار',
       },
       {
         info: projectsInfo.saderat,
-        description: 'مدیر پروژه سیستم های قبوض بانک صادرات',
+        description: 'مدیر پروژه سامانه‌های قبوض بانک صادرات',
       },
       {
         info: projectsInfo.saderat,
-        description: 'مدیر پروژه بهداشت و درمان اداره رفاه بانک صادرات',
+        description: 'مدیر پروژه سامانه بهداشت و درمان اداره رفاه بانک صادرات',
       },
       {
         info: projectsInfo.mellat,
-        description: 'برنامه نویس در شرکت راهبران فناوری اطلاعات ، پروژه منابع انسانی بانک ملت',
+        description: 'برنامه نویس سامانه جامع منابع انسانی بانک ملت',
       },
     ]
   },
   {
     fullName: 'علی متین فر',
     jobTitle: 'FrontEnd Developer',
-    description: 'کارشناس نرم افزار و بیش از4 سال سابقه فعالیت در حوزه برنامه نویسی ',
+    description: 'کارشناس نرم افزار با بیش از 4 سال سابقه فعالیت در حوزه برنامه نویسی ',
+    image: 'matin.png',
     skills: [
       {
         info: projectsInfo.dargah,
-        description: 'برنامه نویس FrontEnd پروژه درگاه ملی حمل بار',
+        description: 'برنامه نویس سامانه درگاه ملی حمل بار',
       },
       {
         info: projectsInfo.nabz,
-        description: 'برنامه نویس ReactJS در پروژه پنل ادمین نبض',
+        description: 'برنامه نویس ReactJS سامانه پنل ادمین نبض',
       },
       {
         info: projectsInfo.nabz,
-        description: 'برنامه نویس  Django و ReactJS در  پروژه مدیریت ورود ، خروج و ثبت گزارش کاری کارکنان “سامان”',
+        description: 'برنامه نویس  Django و ReactJS سامانه سامان (مدیریت ورود ، خروج و ثبت گزارش کاری کارکنان)',
       },
       {
         info: projectsInfo.mediniom,
-        description: ' توسعه و رهبری تیم FrontEnd  در پروژه  مدینیوم',
+        description: ' توسعه و رهبری تیم FrontEnd سامانه مدینیوم',
       },
       {
         info: projectsInfo.binearz,
-        description: ' توسعه و رهبری تیم FrontEnd  در پروژه  صرافی باین ارز',
+        description: ' توسعه و رهبری تیم FrontEnd سامانه صرافی باین ارز',
       },
       {
         info: projectsInfo.soodaro,
-        description: ' توسعه و رهبری تیم FrontEnd  در پروژه  سودارو',
+        description: ' توسعه و رهبری تیم FrontEnd سامانه سودارو',
       },
     ]
   },
   {
     fullName: 'حسین مبینی',
     jobTitle: 'Product Designer',
-    description: 'کارشناس ارشد طراحی محصول با بیش از 5 سال تجربه طراحی محصولات مختلف و کارشناس ارشد مدیریت کارآفرینی گرایش کسب و کار جدید از دانشگاه خوارزمی',
+    description: 'کارشناس ارشد مدیریت کارآفرینی گرایش کسب و کار جدید از دانشگاه خوارزمی با بیش از 5 سال تجربه طراحی محصول',
+    image: 'hosein.png',
     skills: [
       {
         info: projectsInfo.dargah,
-        description: 'طراحی تجربه و رابط کاربری پروژه درگاه ملی حمل بار',
+        description: 'طراحی رابط کاربری سامانه درگاه ملی حمل بار',
       },
       {
         info: projectsInfo.rotbebandi,
-        description: 'طراحی تجربه و رابط کاربری پروژه رتبه بندی اعتباری شرکت مشاور رتبه بندی ایران',
+        description: 'طراحی رابط کاربری سامانه رتبه بندی اعتباری شرکت مشاور رتبه بندی ایران',
       },
       {
         info: projectsInfo.serat,
-        description: 'طراحی رابط کاربری وبسایت خبری صراط نیوز',
+        description: 'طراحی رابط کاربری سایت خبری صراط نیوز',
       },
       {
         info: projectsInfo.jamejam,
@@ -263,7 +269,7 @@ const ourTeamData: OurTeamDataType = [
       // },
       {
         info: projectsInfo.yasan,
-        description: 'طراحی سامانه مدیریت کارخانه طلاسازی برند یاسان',
+        description: 'طراحی سامانه مدیریت فرایند کارخانه طلاسازی یاسان',
       },
       // {
       //   info: projectsInfo.soodaro,
@@ -271,15 +277,15 @@ const ourTeamData: OurTeamDataType = [
       // },
       {
         info: projectsInfo.sapost,
-        description: 'طراحی  رابط و تجربه کاربری سامانه صاپست',
+        description: 'طراحی رابط کاربری سامانه صاپست',
       },
       {
         info: projectsInfo.mopon,
-        description: 'طراحی رابط و تجربه کاربری برند موپن',
+        description: 'طراحی رابط کاربری سایت موپن',
       },
       {
         info: projectsInfo.jika,
-        description: 'طراحی رابط و تجربه کاربری اپلیکیشن جیکا ،در زمینه پیام رسانی،',
+        description: 'طراحی رابط کاربری اپلیکیشن پیام‌رسان جیکا',
       },
       // {
       //   info: projectsInfo.soodaro,
