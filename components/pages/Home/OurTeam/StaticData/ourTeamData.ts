@@ -128,15 +128,15 @@ const ourTeamData: OurTeamDataType = [
         description: 'مشاور سازمان بنادر در ایجاد کانکتور سیستم های سازمان با گمرک و ایجاد بستر یکپارچه تبادلات اقتصادی',
       },
       {
-        info: projectsInfo.dargah,
-        description: 'مشاور فناوری اطلاعات سازمان راهداری در استقرار سامانه TOS',
+        info: projectsInfo.sina,
+        description: 'مشاور فناوری اطلاعات در استقرار سامانه tos',
       },
       {
         info: projectsInfo.sazmanAsnad,
         description: 'مدیر پروژه سامانه یکپارچه مدیریت اجرای اسناد رسمی',
       },
       {
-        info: projectsInfo.sina,
+        info: projectsInfo.helal,
         description: 'مدیره پروژه سیستم مکانیزه فرایندهای انبار',
       },
       {
