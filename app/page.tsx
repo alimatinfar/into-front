@@ -5,30 +5,30 @@ import OurTeam from "@/components/pages/Home/OurTeam/OurTeam";
 import TeamProjects from "@/components/pages/Home/TeamProjects";
 import ContactInfo from "@/components/pages/Home/ContactInfo";
 import Footer from "@/components/Footer/Footer";
+import Background from "@/components/Background";
 
 
 export default function Home() {
+
   return (
     <div>
       <Header/>
 
-      <div className='relative overflow-hidden pt-20 md:pt-0'>
+      <div className='relative pt-20 md:pt-0'>
         <IntroductionSection/>
 
         <AbilitiesSection/>
 
-        <img
-          className='absolute w-full left-0 top-60 xs:top-20 md:top-0 -z-10'
-          src="/images/introduction-background.svg"
-          alt="introduction-background"
-        />
+        <OurTeam/>
+
+        <TeamProjects/>
+
+        <ContactInfo/>
+
+        <Background imageName='background1' className='top-60 xs:top-20 md:top-10' />
+
+        {/*<Background imageName='background2' className='lg:top-[1800px] xl:top-[1600px]' />*/}
       </div>
-
-      <OurTeam/>
-
-      <TeamProjects/>
-
-      <ContactInfo/>
 
       <Footer/>
     </div>

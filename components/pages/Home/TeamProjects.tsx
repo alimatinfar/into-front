@@ -13,8 +13,6 @@ function TeamProjects() {
 
       <div className='flex justify-center'>
         <div className='relative w-full'>
-          <div className='w-full h-full absolute right-0 top-0 z-10 bg-gradient-to-l from-dark-1 to-transparent'></div>
-
           <img src='/images/teamProjects/dargah-project.png' alt='dargah-project.png' className='mx-auto'/>
 
           <div className='flex flex-col z-20 md:pr-10 absolute z-20 bottom-2 md:bottom-5 right-2 md:right-5'>

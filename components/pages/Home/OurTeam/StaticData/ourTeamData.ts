@@ -24,7 +24,7 @@ const projectsInfo = {
   },
   jamejam: {
     title: 'جام جم نیوز',
-    logo: 'jamejam.png',
+    logo: 'jamejam-news.png',
   },
   kharazmi: {
     title: 'شرکت داده پردازی خوارزمی',
@@ -38,21 +38,17 @@ const projectsInfo = {
     title: 'بانک ملت',
     logo: 'mellat.png',
   },
-  modiriatBohran: {
-    title: 'سازمان مدیریت بحران کشور',
-    logo: 'modiriat-bohran.png',
-  },
   mopon: {
     title: 'موپن',
     logo: 'mopon.png',
   },
   jika: {
     title: 'جیکا',
-    logo: 'mopon.png',
+    logo: 'jika.png',
   },
   nabz: {
     title: 'نبض هوشمند سلامت',
-    logo: 'nabz.webp',
+    logo: 'nabz.png',
   },
   otaghBazargani: {
     title: 'اتاق بازرگانی، صنایع، معادن و کشاورزی تهران',
@@ -71,8 +67,16 @@ const projectsInfo = {
     logo: 'sapost.png',
   },
   sazmanAsnad: {
-    title: 'سازمان اسناد و کتابخانه ملی',
-    logo: 'sazman-asnad.png',
+    title: 'سازمان ثبت اسناد و املاک کشور',
+    logo: 'asnad.png',
+  },
+  sina: {
+    title: 'شرکت توسعه خدمات دریایی و بندری سینا',
+    logo: 'sina.png',
+  },
+  helal: {
+    title: 'سازمان مدیریت بحران کشور',
+    logo: 'helal.png',
   },
   serat: {
     title: 'صراط نیوز',
@@ -85,7 +89,7 @@ const projectsInfo = {
   yasan: {
     title: 'یاسان',
     logo: 'yasan.png',
-  }
+  },
 }
 
 export type SkillType = {
@@ -132,11 +136,11 @@ const ourTeamData: OurTeamDataType = [
         description: 'مدیر پروژه سامانه یکپارچه مدیریت اجرای اسناد رسمی',
       },
       {
-        info: projectsInfo.sazmanAsnad,
+        info: projectsInfo.sina,
         description: 'مدیره پروژه سیستم مکانیزه فرایندهای انبار',
       },
       {
-        info: projectsInfo.modiriatBohran,
+        info: projectsInfo.helal,
         description: 'مدیر پروژه سامانه مدیریت انبارهای بحران کشور',
       },
       {

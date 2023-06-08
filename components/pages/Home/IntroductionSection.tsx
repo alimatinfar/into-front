@@ -36,7 +36,7 @@ export default function IntroductionSection() {
         </LinkButton>
       </div>
 
-      <img src="/images/code.png" alt="code"/>
+      <img src="/images/code.png" alt="code" className='pt-14'/>
     </HomeContainer>
   );
 }

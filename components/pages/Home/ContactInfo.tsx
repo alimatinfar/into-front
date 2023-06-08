@@ -5,7 +5,8 @@ import HomeContainer from "@/components/pages/Home/HomeContainer";
 function ContactInfo() {
 
   const phoneNumbers = [
-    '(+98) 991 243 8434', '(+98) 913 040 7545'
+    {link: '+989912438434', label: '(+98) 991 243 8434'},
+    {link: '+989130407545', label: '(+98) 913 040 7545'}
   ]
 
   return (
@@ -23,7 +24,13 @@ function ContactInfo() {
 
           <div dir='ltr' className='flex items-center justify-between text-white mt-5 px-1 md:px-5 md:space-x-4'>
             {phoneNumbers.map(phoneNumber => (
-              <p key={phoneNumber} className='bg-dark-1 text-center text-white px-2 py-2 rounded-md text-sm md:text-base'>{phoneNumber}</p>
+              <a
+                key={phoneNumber.link}
+                href={`tel:${phoneNumber.link}`}
+                className='bg-dark-1 text-center text-white px-2 py-2 rounded-md text-sm md:text-base'
+              >
+                {phoneNumber.label}
+              </a>
             ))}
           </div>
         </div>
