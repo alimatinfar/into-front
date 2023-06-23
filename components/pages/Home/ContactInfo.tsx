@@ -5,8 +5,8 @@ import HomeContainer from "@/components/pages/Home/HomeContainer";
 function ContactInfo() {
 
   const phoneNumbers = [
-    {link: '+989912438434', label: '(+98) 991 243 8434'},
-    {link: '+989130407545', label: '(+98) 913 040 7545'}
+    {link: '+989123125405', label: '(+98) 912 312 5405'},
+    {link: '+989912438434', label: '(+98) 991 243 8434'}
   ]
 
   return (
