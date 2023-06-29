@@ -25,7 +25,7 @@ export default function Home() {
 
         <ContactInfo/>
 
-        <Background imageName='background1' className='top-60 xs:top-20 md:top-10' />
+        <Background imageName='background1' className='top-60 xs:top-20 md:top-10 opacity-70' />
 
         {/*<Background imageName='background2' className='lg:top-[1800px] xl:top-[1600px]' />*/}
       </div>

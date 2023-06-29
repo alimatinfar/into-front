@@ -25,5 +25,5 @@ html {
 body {
   color: rgb(var(--foreground-rgb));
   direction: rtl;
-  @apply bg-dark-1 font-peyda text-white;
+  @apply bg-dark-1 font-peyda text-white bg-[url('../../public/images/background.webp')];
 }
